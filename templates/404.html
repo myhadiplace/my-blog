@@ -1,0 +1,10 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+
+<h1>404 page not found</h1>
+<h3><a href="{{url_for('get_all_posts')}}" style="{margin:100px}">go to home page</a></h3>
+{% include "footer.html" %}
+{% endblock %}
